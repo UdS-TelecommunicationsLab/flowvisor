@@ -862,7 +862,7 @@ public class FlowSpaceImpl implements FlowSpace {
 			if (row.get(NWDST) == null) 
 				ps.setNull(10, Types.INTEGER);
 			else
-				ps.setInt(10, ((Long) row.get(NWDST)).intValue());
+				ps.setInt(10, ((Double) row.get(NWDST)).intValue());
 			if (row.get(NWPROTO) == null) 
 				ps.setNull(11, Types.SMALLINT);
 			else
